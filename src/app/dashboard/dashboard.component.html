@@ -1,0 +1,65 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>Khel Approve</h1>
+        <button (click)="RefreshList($event)" class="btn btn-primary">Refresh</button>        
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <!-- Your Page Content Here -->
+        <div class="box box-success">
+            <!--<div class="box-header">               
+                <h3 class="box-title">
+                    <button type="button" class="btn btn-info" (click)="openModal(template)">
+                        Create Appointment
+                    </button>                  
+                </h3>              
+            </div>--> 
+            <div class="box-body">                          
+                <div class="col-md-12 table-responisve" style="overflow:auto; height: 400px">
+                    <table class="table table-hover tCase">
+                        <tr>
+                            <th>name</th>
+                            <th>description</th>
+                            <th>formation</th>
+                            <th>intensity</th>
+                            <th>audiance</th>
+                            <th>min participants</th>
+                            <th>max participants</th>
+                            <th>video</th>
+                            <th>submited date</th>
+                            <th>Approve</th>                             
+</tr>
+                        <tr *ngFor="let pd of dataPdetails; let i = index">
+                            <td>{{pd.name}}</td>
+                            <td>{{pd.description}}</td>
+                            <td>{{pd.formation}}</td>
+                            <td>{{pd.intensity}}</td>
+                            <td>{{pd.audiance}}</td>
+                            <td>{{pd.min_participants}}</td>
+                            <td>{{pd.max_participants}}</td>
+                            <td><a href="{{pd.video}}" target="_blank"> Youtube link </a></td>
+                            <td>{{pd.submited_date}}</td>
+                            <td ><button (click)="setClickedRow($event, pd)" class="btn btn-primary">Approve</button></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+          
+        </div>
+
+    
+
+
+
+    </section>
+        <!-- /.content -->
+
+</div>
+
+
+
+
+

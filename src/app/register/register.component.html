@@ -1,0 +1,90 @@
+<div class="register-box">
+    <div class="register-logo">
+        <a href="#"><b>Khel</b>India Khelo</a>
+    </div>
+    <div class="register-box-body">
+        <p class="login-box-msg">Register a new Doctor</p>
+    
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" [(ngModel)]="firstName" placeholder="First Name...">
+                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            </div>   
+           
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="lastName" placeholder="Last Name...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>   
+
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="practiceName" placeholder="Practice Name...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="address" placeholder="address...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+       
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="city" placeholder="city...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="state" placeholder="state...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="country" placeholder="country...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+       
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="zip" placeholder="zip...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="phonenumber" placeholder="Phone Nnumber...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+      
+
+        <div class="form-group has-feedback">
+            <input type="text" class="form-control" [(ngModel)]="username" placeholder="User Name...">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+
+      
+
+            <div class="form-group has-feedback">
+                <input type="email" class="form-control" [(ngModel)]="emailaddress" placeholder="Email...">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" [(ngModel)]="password" placeholder="Password..." class="form-control" />
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <!--<div class="form-group has-feedback">
+                <input type="password" class="form-control" placeholder="Retype password">
+                <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+            </div>-->
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                        <label>
+                            <input type="checkbox"> I agree to the <a href="#">terms</a>
+                        </label>
+                    </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-xs-4">                 
+                    <button type="submit" class="btn btn-primary btn-block btn-flat" (click)="signup($event)">Get Started</button>
+                </div>
+                <!-- /.col -->
+            </div>
+   
+       
+        <a [routerLink]="['/login']" class="text-center">I already have signup</a>
+    </div>
+    <!-- /.form-box -->
+</div>
